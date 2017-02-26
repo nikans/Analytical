@@ -7,12 +7,12 @@ Pod::Spec.new do |s|
       A simple, lightweight Swift analytics abstraction layer.
                        DESC
 
-  s.homepage         = 'https://github.com/legoless/Analytical'
+  s.homepage         = 'https://github.com/nikans/Analytical'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Dal Rupnik' => 'legoless@gmail.com' }
-  s.source           = { :git => 'https://github.com/legoless/Analytical.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/thelegoless'
+  s.source           = { :git => 'https://github.com/nikans/Analytical.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/inikans'
 
   s.ios.deployment_target = '9.0'
 
@@ -72,6 +72,6 @@ Pod::Spec.new do |s|
     subspec.dependency 'Answers'
   end
 
-use_frameworks!
+#use_frameworks!
 
 end
