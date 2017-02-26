@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Analytical'
-  s.version          = '0.4.8'
+  s.version          = '0.4.9'
   s.summary          = 'Analytical is a lightweight analytics library wrapper.'
 
   s.description      = <<-DESC
@@ -58,5 +58,20 @@ Pod::Spec.new do |s|
     subspec.dependency 'Analytical/Core'
     subspec.dependency 'Analytics'
   end
+
+#s.subspec 'Firebase' do |subspec|
+#    subspec.source_files = 'Analytical/Classes/Provider/FirebaseProvider.swift'
+#    subspec.dependency 'Analytical/Core'
+#    subspec.dependency 'Firebase/Core'
+#  end
+
+  s.subspec 'Answers' do |subspec|
+    subspec.source_files = 'Analytical/Classes/Provider/AnswersProvider.swift'
+    subspec.dependency 'Analytical/Core'
+    subspec.dependency 'Fabric'
+    subspec.dependency 'Answers'
+  end
+
+use_frameworks!
 
 end

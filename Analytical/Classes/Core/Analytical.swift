@@ -119,7 +119,7 @@ public protocol Analytical {
     //
     
     /*!
-     Identify an user with analytics. Do this as soon as user is known.
+     Identify a user with analytics. Do this as soon as the user is known.
      
      - parameter userId:      user id
      - parameter properties:  different traits and properties
